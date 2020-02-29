@@ -99,3 +99,4 @@ const Button = styled.button`
 | Theming            | Making and Applying theme to components      | [Documentation](https://github.com/Kwon770/react-styled-components/blob/master/MD%20Document/Theme.md)             |
 | Nesting            | Using Nesting                                | [Documentation](https://github.com/Kwon770/react-styled-components/blob/master/MD%20Document/Nesting.md)           |
 | From ReactNative   | How to use style-components from Reat Native | [Documentation](https://github.com/Kwon770/react-styled-components/blob/master/MD%20Document/fromReactNative.md)   |
+| ...Learn More      | More function                                | [Documentation](https://github.com/Kwon770/react-styled-components/blob/master/MD%20Document/more.md)              |
