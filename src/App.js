@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, css, keyframes } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -15,7 +15,9 @@ class App extends Component {
       <Container>
         <GlobalStyle />
         <Button success>Hello</Button>
-        <Button danger>Hello</Button>
+        <Button danger rotationTime={2}>
+          Hello
+        </Button>
         <Anchor href="https://google.com">Go to google</Anchor>
       </Container>
     );
@@ -43,12 +45,28 @@ const Button = styled.button`
     outline: none;
   }
   background-color: ${props => (props.danger ? "#e74c3c" : "#2ecc71")};
+  ${props => {
+    if (props.danger) {
+      return css`
+        animation: ${rotation} ${props.rotationTime}s linear;
+      `;
+    }
+  }};
 `;
 
 // <styled>.withComponent("<Tag>") : 이미 존재하는 컴포넌트 styled의 Tag만 변경하여 재활용
 // styled(~withComponent~)`` : styled extending
 const Anchor = styled(Button.withComponent("a"))`
   text-decoration: none;
+`;
+
+const rotation = keyframes`
+  from {
+    transform:rotate(0deg)
+  }
+  to {
+    transform:rotate(360deg)
+  }
 `;
 
 export default App;
