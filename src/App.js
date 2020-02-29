@@ -2,12 +2,6 @@ import React, { Component } from "react";
 import styled, { css, ThemeProvider } from "styled-components";
 import theme from "./theme";
 
-const Container = styled.div`
-  height: 100vh;
-  width: 100%;
-  background-color: #34495e;
-`;
-
 const Card = styled.div`
   background-color: red;
 `;
@@ -23,6 +17,15 @@ const Form = () => (
     <Button>Hello</Button>
   </Card>
 );
+
+const Container = styled.div`
+  height: 100vh;
+  width: 100%;
+  background-color: #34495e;
+  ${Card} {
+    background-color: white;
+  }
+`;
 
 class App extends Component {
   render() {
