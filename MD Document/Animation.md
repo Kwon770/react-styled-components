@@ -1,6 +1,4 @@
-# createGlobalStyle
-
-createGlobalStyle&#96;css&#96; : Apply style globally (like body)
+# Animation
 
 ```js
 import styled, { css, keyframes } from "styled-components";

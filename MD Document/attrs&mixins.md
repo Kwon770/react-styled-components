@@ -1,6 +1,13 @@
-import React, { Component } from "react";
+# attrs & mixins
+
+attrs({_props_}) : Add props when making components
+
+css`_css_` : Make css block what can be added easilly
+
+```js
 import styled, { css } from "styled-components";
 
+// Mixins
 const awesomeCard = css`
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   background-color: white;
@@ -8,6 +15,7 @@ const awesomeCard = css`
   padding: 20px;
 `;
 
+// Attrs
 const Input = styled.input.attrs({
   required: true
 })`
@@ -24,11 +32,4 @@ class App extends Component {
     );
   }
 }
-
-const Container = styled.div`
-  height: 100vh;
-  width: 100%;
-  background-color: #34495e;
-`;
-
-export default App;
+```
