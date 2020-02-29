@@ -18,6 +18,12 @@ const Button = styled.button`
   background-color: ${props => props.theme.successColor};
 `;
 
+const Form = () => (
+  <Card>
+    <Button>Hello</Button>
+  </Card>
+);
+
 class App extends Component {
   render() {
     return (
@@ -29,11 +35,5 @@ class App extends Component {
     );
   }
 }
-
-const Form = () => (
-  <Card>
-    <Button>Hello</Button>
-  </Card>
-);
 
 export default App;
