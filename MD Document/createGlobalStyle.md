@@ -1,6 +1,6 @@
 # createGlobalStyle
 
-### createGlobalStyle&#96;css&#96; : Apply style globally (like body)
+createGlobalStyle&#96;css&#96; : Apply style globally (like body)
 
 ```js
 import { createGlobalStyle } from "styled-components";

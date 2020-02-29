@@ -1,14 +1,13 @@
 # styled
 
-### styled.&#60;_Tag_&#62;&#96;_css_&#96; : Return component what have the css style 
+styled.&#60;_Tag_&#62;&#96;_css_&#96; : Return component what have the css style
 
-### &#60;_Component props_&#62; : props in component can be used from css style
+&#60;_Component props_&#62; : props in component can be used from css style
 
 ```js
 import styled from "styled-components";
 
 class App extends Component {
-  // <Component props></Component> props를 styled에서 받아갈 수 있음
   render() {
     return (
       <Container>
