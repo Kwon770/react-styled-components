@@ -2,7 +2,7 @@
 
 attrs({_props_}) : Add props when making components
 
-css`_css_` : Make css block what can be added easilly
+css\`` : Make css block what can be added easilly
 
 ```js
 import styled, { css } from "styled-components";
