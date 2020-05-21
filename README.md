@@ -2,7 +2,7 @@
 
 ## Installation
 
-### yarm
+### yarn
 
 `yarn add styled-components`
 
